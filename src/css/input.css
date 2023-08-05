@@ -1,0 +1,24 @@
+@tailwind base;
+body {
+	@apply font-inter bg-main;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.flex-between {
+		@apply flex justify-between items-center;
+	}
+	.list-menu {
+		@apply w-full bg-white rounded-md px-2 font-semibold text-main text-xl py-1 cursor-pointer hover:bg-main-ungu hover:text-white;
+	}
+	.menu-active {
+		@apply bg-main-ungu text-white;
+	}
+	.nonactive {
+		@apply -top-80;
+	}
+	.active {
+		@apply -top-0;
+	}
+}
